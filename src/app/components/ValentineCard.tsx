@@ -53,7 +53,17 @@ export default function ValentineCard({ personName }: ValentineCardProps) {
             <button
               className="bg-white hover:bg-gray-100 text-black font-bold py-2 px-4 rounded"
               onClick={handleNoClick}>
-              {noCount === 0 ? "NO" : noCount === 1 ? "PLEASE!" : "PRETTY PLEASE!"}
+              {noCount === 0
+                ? "NO"
+                : noCount === 1
+                ? "PLEASE!"
+                : noCount === 2
+                ? "PRETTY PLEASE!"
+                : noCount === 3
+                ? "JUST SAY YES!"
+                : noCount === 6
+                ? "YOU ARE KIDDING"
+                : "YOU ARE MEAN!"}
             </button>
 
             {yesButtons.map((pos, index) => (
