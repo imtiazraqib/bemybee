@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { DynaPuff } from "next/font/google";
 import type React from "react"; // Import React
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = DynaPuff({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </p>
         </footer>
       </body>
+      <GoogleAnalytics gaId="G-6EWH1866F3" />
     </html>
   );
 }
