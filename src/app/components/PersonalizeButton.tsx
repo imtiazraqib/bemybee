@@ -35,13 +35,13 @@ const PersonalizeButton = () => {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle>Personalize Your Valentine's Card ❤️</DialogTitle>
+            <DialogTitle>Personalize Your Valentine Card ❤️</DialogTitle>
           </DialogHeader>
 
           <div className="space-y-6 p-4">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-medium">
-                Recipient's Name
+                Recipient Name
               </label>
               <Input
                 id="name"
