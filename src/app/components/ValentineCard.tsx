@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Heart, X } from "lucide-react";
+import { useState } from "react";
+import { Heart } from "lucide-react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
 interface ValentineCardProps {
   personName: string;
