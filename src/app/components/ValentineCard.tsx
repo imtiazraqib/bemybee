@@ -71,7 +71,7 @@ export default function ValentineCard({ personName }: ValentineCardProps) {
 
       {yesPressed && (
         <div className="fade-in-up absolute inset-0 bg-white rounded-lg shadow-lg p-8 flex items-center justify-center flex-col text-center">
-          <h2 className="text-2xl font-bold mb-[40px] text-gray-800">Yay! Happy Valentine's Day, {personName}!</h2>
+          <h2 className="text-2xl font-bold mb-[40px] text-gray-800">Yay! Happy Valentine&#39;s Day, {personName}!</h2>
           <div className="w-[240px] p-[10px] bg-pink-300 -rotate-[0.27rad] mt-[10px] rounded-lg">
             <Image
               src={gifs[Math.floor(Math.random() * gifs.length)]}
