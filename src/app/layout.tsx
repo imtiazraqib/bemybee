@@ -5,21 +5,13 @@ import type React from "react"; // Import React
 
 const inter = DynaPuff({ subsets: ["latin"] });
 
-export async function generateMetadata({
-  searchParams = {},
-}: {
-  searchParams?: { [key: string]: string | string[] | undefined };
-} = {}): Promise<Metadata> {
-  const personName = typeof searchParams.name === "string" ? searchParams.name : "mi amor";
-
-  return {
-    title: `Valentine's Card for ${personName} | Imtiaz Raqib`,
-    description: `A cute interactive Valentine's card for ${personName}. A cute lil project to show some love by Imtiaz Raqib.`,
-    openGraph: {
-      images: "https://imgbox.com/WwsJeAQf",
-    },
-  };
-}
+export const metadata: Metadata = {
+  title: `Valentine's Card for mi amor | Cutesy tool by Imtiaz Raqib`,
+  description: `A cute interactive Valentine's card for mi amor. A cute lil project to show some love by Imtiaz Raqib.`,
+  openGraph: {
+    images: "https://imgbox.com/WwsJeAQf",
+  },
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
