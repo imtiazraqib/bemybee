@@ -10,11 +10,14 @@ export async function generateMetadata({
 }: {
   searchParams?: { [key: string]: string | string[] | undefined };
 } = {}): Promise<Metadata> {
-  const personName = typeof searchParams.name === "string" ? searchParams.name : "My Valentine";
+  const personName = typeof searchParams.name === "string" ? searchParams.name : "mi amor";
 
   return {
     title: `Valentine's Card for ${personName} | Imtiaz Raqib`,
     description: `A cute interactive Valentine's card for ${personName}. A cute lil project to show some love by Imtiaz Raqib.`,
+    openGraph: {
+      images: "https://imgbox.com/WwsJeAQf",
+    },
   };
 }
 
