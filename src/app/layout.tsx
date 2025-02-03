@@ -31,6 +31,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </a>
             .
           </p>
+          <p className="text-xs">
+            An adaptation from{" "}
+            <a className="underline decoration-pink-500" href="https://mewtru.com/valentine">
+              mewtru
+            </a>
+            .
+          </p>
         </footer>
       </body>
     </html>

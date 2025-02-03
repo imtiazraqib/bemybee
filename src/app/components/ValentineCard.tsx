@@ -47,12 +47,12 @@ export default function ValentineCard({ personName }: ValentineCardProps) {
           <h2 className="text-2xl font-bold mb-4 text-gray-800">Will you be my Valentine, {personName}?</h2>
           <div className="relative flex items-center justify-center gap-4 w-full h-48 mt-[20px]">
             <button
-              className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+              className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded"
               onClick={() => setYesPressed(true)}>
               YES
             </button>
             <button
-              className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+              className="bg-white hover:bg-gray-100 text-black font-bold py-2 px-4 rounded"
               onClick={handleNoClick}>
               {noCount === 0 ? "NO" : noCount === 1 ? "PLEASE!" : "PRETTY PLEASE!"}
             </button>
@@ -60,7 +60,7 @@ export default function ValentineCard({ personName }: ValentineCardProps) {
             {yesButtons.map((pos, index) => (
               <button
                 key={index}
-                className="absolute bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+                className="absolute bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded"
                 style={{ top: `${pos.top}%`, left: `${pos.left}%` }}
                 onClick={() => setYesPressed(true)}>
                 YES
@@ -72,13 +72,13 @@ export default function ValentineCard({ personName }: ValentineCardProps) {
 
       {yesPressed && (
         <div className="fade-in-up absolute inset-0 bg-white rounded-lg shadow-lg p-8 flex items-center justify-center flex-col text-center">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800 mb-[40px]">Yay! Happy Valentine's Day, {personName}!</h2>
-          <div className="w-[260px] p-[10px] bg-pink-300 -rotate-[0.27rad] mt-[10px] rounded-lg">
+          <h2 className="text-2xl font-bold mb-[40px] text-gray-800">Yay! Happy Valentine's Day, {personName}!</h2>
+          <div className="w-[240px] p-[10px] bg-pink-300 -rotate-[0.27rad] mt-[10px] rounded-lg">
             <Image
               src={gifs[Math.floor(Math.random() * gifs.length)]}
               alt="Cute Valentine's GIF"
-              width={250}
-              height={250}
+              width={230}
+              height={230}
               className="mx-auto rounded-lg"
             />
           </div>
