@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </p>
           <p className="text-xs">
             An adaptation from{" "}
-            <a className="underline decoration-pink-500" href="https://mewtru.com/valentine">
+            <a className="underline decoration-pink-500" href="https://mewtru.com/valentine" target="_blank">
               mewtru
             </a>
             .
